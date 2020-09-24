@@ -1,0 +1,28 @@
+{
+  "name": "node_inline_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "start": "nodemon bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github.com/v0ldemar01.git"
+  },
+  "author": "Volodymyr Minchenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/github.com/v0ldemar01/issues"
+  },
+  "homepage": "https://github.com/github.com/v0ldemar01#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "telegraf": "^3.38.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.9.0",
+    "nodemon": "^2.0.4"
+  }
+}
