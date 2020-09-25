@@ -1,6 +1,6 @@
 # dependencies
 node_modules
-
+db/avatar
 .env
 .env.local
 .env.development.local

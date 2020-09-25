@@ -9,16 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github.com/v0ldemar01.git"
+    "url": "git+https://github.com/github.com/v0ldemar01/node_inline_bot.git"
   },
   "author": "Volodymyr Minchenko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/github.com/v0ldemar01/issues"
+    "url": "https://github.com/github.com/v0ldemar01/node_inline_bot/issues"
   },
-  "homepage": "https://github.com/github.com/v0ldemar01#readme",
+  "homepage": "https://github.com/github.com/v0ldemar01/node_inline_bot#readme",
   "dependencies": {
+    "axios": "^0.20.0",
     "dotenv": "^8.2.0",
+    "mysql2": "^2.2.5",
     "telegraf": "^3.38.0"
   },
   "devDependencies": {
