@@ -36,7 +36,7 @@ bot.on('inline_query', async ({ inlineQuery, answerInlineQuery }) => {
     results = await getAllCharacters();
   }
   
-  const new_results = results.map((result, i) => {    
+  const new_results = results.map((result, i) => {   
     return {
       type: 'article',
       id: i,
@@ -53,4 +53,4 @@ bot.on('inline_query', async ({ inlineQuery, answerInlineQuery }) => {
 bot.on('chosen_inline_result', ctx => {
   console.log('You chosed an inline query result')
 });
-bot.launch();
+bot.startPolling();
