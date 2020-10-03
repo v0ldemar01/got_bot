@@ -7,7 +7,11 @@ const {getCharactersById,
   getCharactersByLetter, 
   getAllCharacters
 } = require('./getData');
+
 const {BOT_TOKEN} = process.env;
+const PORT = process.env.PORT || 3000;
+const DB_HOST = process.env.DB_HOST;
+
 const bot = new Telegraf(BOT_TOKEN);
 
 
@@ -53,4 +57,7 @@ bot.on('inline_query', async ({ inlineQuery, answerInlineQuery }) => {
 bot.on('chosen_inline_result', ctx => {
   console.log('You chosed an inline query result')
 });
-bot.startPolling();
+bot.telegram.setWebhook(`${DB_HOST}/bot${BOT_TOKEN}`);
+bot.startWebhook(`/bot${BOT_TOKEN}`, null, PORT);
+
+bot.launch();
